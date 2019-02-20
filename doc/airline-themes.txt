@@ -240,6 +240,11 @@ Turns the outer-most section of the statusline Solarized green, making it
 look more like classic powerline in normal mode. To enable it: >
     let g:airline_solarized_normal_green = 1
 <
+                                                *g:airline_solarized_normal_blue*
+
+Use blue color for statusline theme >
+    let g:airline_solarized_normal_blue = 1
+<
                                                 *g:airline_solarized_dark_text*
 
 Turns the text color of the outer-most sections of the statusline to be dark. 
