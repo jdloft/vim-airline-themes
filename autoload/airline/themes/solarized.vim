@@ -41,7 +41,7 @@ function! airline#themes#solarized#refresh()
     let s:green   = {'t': 2,  'g': "#d33682"}  " Base 0B
   elseif s:solarized_mode3 == 1
     " Solarized mode 3
-    let s:base03  = {'t': s:ansi_colors ? 255 : (s:tty ? '0' : 234), 'g': '#002b36'}
+    let s:base03  = {'t': s:ansi_colors ? 234 : (s:tty ? '0' : 234), 'g': '#002b36'}
     let s:base02  = {'t': s:ansi_colors ? '0' : (s:tty ? '0' : 235), 'g': '#073642'}
     let s:base01  = {'t': s:ansi_colors ? 240 : (s:tty ? '0' : 240), 'g': '#586e75'}
     let s:base00  = {'t': s:ansi_colors ?  66 : (s:tty ? '7' : 241), 'g': '#657b83'}
