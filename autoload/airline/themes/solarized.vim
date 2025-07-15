@@ -41,14 +41,29 @@ function! airline#themes#solarized#refresh()
     let s:green   = {'t': 2,  'g': "#d33682"}  " Base 0B
   elseif s:solarized_mode3 == 1
     " Solarized mode 3
+    " if &background == "light"
+    "   let s:base03  = {'t': s:ansi_colors ?  15 : (s:tty ? '0' : 234), 'g': '#002b36'}
+    "   let s:base02  = {'t': s:ansi_colors ?   7 : (s:tty ? '0' : 235), 'g': '#073642'}
+    "   let s:base00  = {'t': s:ansi_colors ?   8 : (s:tty ? '7' : 241), 'g': '#657b83'}
+    "   let s:base0   = {'t': s:ansi_colors ? 244 : (s:tty ? '7' : 244), 'g': '#839496'}
+    "   let s:base2   = {'t': s:ansi_colors ? '0' : (s:tty ? '7' : 254), 'g': '#eee8d5'}
+    "   let s:base3   = {'t': s:ansi_colors ? 230 : (s:tty ? '7' : 230), 'g': '#fdf6e3'}
+    " else
+    "   let s:base03  = {'t': s:ansi_colors ? 234 : (s:tty ? '0' : 234), 'g': '#002b36'}
+    "   let s:base02  = {'t': s:ansi_colors ? '0' : (s:tty ? '0' : 235), 'g': '#073642'}
+    "   let s:base00  = {'t': s:ansi_colors ?  66 : (s:tty ? '7' : 241), 'g': '#657b83'}
+    "   let s:base0   = {'t': s:ansi_colors ?   8 : (s:tty ? '7' : 244), 'g': '#839496'}
+    "   let s:base2   = {'t': s:ansi_colors ?   7 : (s:tty ? '7' : 254), 'g': '#eee8d5'}
+    "   let s:base3   = {'t': s:ansi_colors ?  15 : (s:tty ? '7' : 230), 'g': '#fdf6e3'}
+    " endif
     let s:base03  = {'t': s:ansi_colors ? 234 : (s:tty ? '0' : 234), 'g': '#002b36'}
-    let s:base02  = {'t': s:ansi_colors ? '0' : (s:tty ? '0' : 235), 'g': '#073642'}
-    let s:base01  = {'t': s:ansi_colors ? 240 : (s:tty ? '0' : 240), 'g': '#586e75'}
+    let s:base02  = {'t': s:ansi_colors ? 235 : (s:tty ? '0' : 235), 'g': '#073642'}
     let s:base00  = {'t': s:ansi_colors ?  66 : (s:tty ? '7' : 241), 'g': '#657b83'}
-    let s:base0   = {'t': s:ansi_colors ?   8 : (s:tty ? '7' : 244), 'g': '#839496'}
+    let s:base0   = {'t': s:ansi_colors ? 244 : (s:tty ? '7' : 244), 'g': '#839496'}
+    let s:base2   = {'t': s:ansi_colors ? 254 : (s:tty ? '7' : 254), 'g': '#eee8d5'}
+    let s:base3   = {'t': s:ansi_colors ? 230 : (s:tty ? '7' : 230), 'g': '#fdf6e3'}
+    let s:base01  = {'t': s:ansi_colors ? 240 : (s:tty ? '0' : 240), 'g': '#586e75'}
     let s:base1   = {'t': s:ansi_colors ? 245 : (s:tty ? '7' : 245), 'g': '#93a1a1'}
-    let s:base2   = {'t': s:ansi_colors ?   7 : (s:tty ? '7' : 254), 'g': '#eee8d5'}
-    let s:base3   = {'t': s:ansi_colors ?  15 : (s:tty ? '7' : 230), 'g': '#fdf6e3'}
     let s:yellow  = {'t': s:ansi_colors ?   3 : (s:tty ? '3' : 136), 'g': '#b58900'}
     let s:orange  = {'t': s:ansi_colors ?   9 : (s:tty ? '1' : 166), 'g': '#cb4b16'}
     let s:red     = {'t': s:ansi_colors ?   1 : (s:tty ? '1' : 160), 'g': '#dc322f'}
