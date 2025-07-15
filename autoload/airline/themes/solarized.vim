@@ -98,11 +98,35 @@ function! airline#themes#solarized#refresh()
   """"""""""""""""""""""""""""""""""""""""""""""""
   " Normal mode
   if s:background == 'dark'
-    let s:N1 = [(s:dark_text ? s:base03 : s:base3), (s:use_green ? s:green : (s:use_blue ? s:blue : s:base1)), 'bold']
+    " N1 foreground
+    let s:n1_fg = s:dark_text ? s:base03 : s:base3
+
+    " N1 background
+    if s:use_green
+        let s:n1_bg = s:green
+    elseif s:use_blue
+        let s:n1_bg = s:blue
+    else
+        let s:n1_bg = s:base1
+    endif
+
+    let s:N1 = [s:n1_fg, s:n1_bg, 'bold']
     let s:N2 = [s:base2, (s:tty ? s:base01 : s:base00), '']
     let s:N3 = [s:base01, s:base02, '']
   else
-    let s:N1 = [(s:dark_text ? s:base03 : s:base2), (s:use_green ? s:green : s:base00), 'bold']
+    " N1 foreground
+    let s:n1_fg = s:dark_text ? s:base03 : s:base2
+
+    " N1 background
+    if s:use_green
+        let s:n1_bg = s:green
+    elseif s:use_blue
+        let s:n1_bg = s:blue
+    else
+        let s:n1_bg = s:base00
+    endif
+
+    let s:N1 = [s:n1_fg, s:n1_bg, 'bold']
     let s:N2 = [(s:tty ? s:base01 : s:base2), s:base1, '']
     let s:N3 = [s:base1, s:base2, '']
   endif
